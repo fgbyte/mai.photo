@@ -1,0 +1,29 @@
+ //My Theme Colors
+ $orange:  #FF6B35;
+ $blue: #1993CE;
+ $yellow: #FFCE0F;
+ $background: #0B0626;
+ $text-color: #E0E0E0;
+ 
+ //REESCRIBIENDO VARS DE BOOTSTRAP
+ $primary: $orange;
+ $secondary: $blue;
+ $warning:$yellow;
+ $dark: $background;
+ $white: $text-color;
+ $body-bg: $background;
+ $body-color: $white;
+ $navbar-dark-active-color: #AAA9B1;
+
+ //RESETS
+ body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ //GLOBAL MIXINS
+ @mixin gradient {
+   background-image: linear-gradient(to right, $primary, $warning);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
