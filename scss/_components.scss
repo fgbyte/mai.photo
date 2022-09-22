@@ -74,10 +74,9 @@
 }
 
 .about__social-icons {
+  width: 15rem;
   display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  padding-bottom: 2rem;
+  justify-content: space-between;
 
   span {
     color: $white;
@@ -96,7 +95,7 @@
   .carousel-indicators {
     align-items: center;
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
 
     button {
       border-radius: 100%;
@@ -118,16 +117,55 @@
     // margin-bottom: 2rem;
     overflow: hidden;
     text-align: center;
-    border-radius: $border-radius;
+    border-radius: 8px;
 
-    // &__rectangle {
-    //   position: absolute;
-    //         bottom: 0;
-    //         max-width: 44rem;
-    //         width: 100%;
-    //         height: 5rem;
-    //         background-color: rgba($color: black, $alpha: .5);
-    //         padding: 0 1rem;
-    // }
+    &__rectangle {
+      position: absolute;
+      max-width: 30.42rem;
+      bottom: 0;
+      width: 100%;
+      height: 5rem;
+      background-color: rgba($color: black, $alpha: 0.5);
+      padding: 0 1rem;
+      z-index: 1;
+    }
+
+    .carousel-item {
+      width: 100%;
+
+      &__image {
+        width: 100%;
+        // max-width: 37.5rem;
+        object-fit: cover;
+        height: 46.68rem;
+      }
+
+      &__text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+
+        a {
+          color: $white;
+          text-decoration-color: $white;
+
+          &:hover {
+            color: $secondary;
+          text-decoration-color: $secondary;
+
+          }
+        }
+
+        span {
+          color: $primary;
+          margin-left: .5rem;
+        }
+      }
+    }
   }
 }
