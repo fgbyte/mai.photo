@@ -21073,6 +21073,10 @@ readers do not read off random characters that represent icons */
 }
 
 .hero__title {
+  background-image: linear-gradient(to right, #ff6b35, #ffce0f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 3.75rem;
   font-weight: bold;
 }
@@ -21296,8 +21300,9 @@ readers do not read off random characters that represent icons */
   font-weight: 600;
   font-size: 1.25rem;
 }
-.contact__form input, .contact__form textarea {
-  background-color: #2E2A44;
+.contact__form input,
+.contact__form textarea {
+  background-color: #2e2a44;
   border: none;
 }
 

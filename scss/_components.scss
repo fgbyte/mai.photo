@@ -70,11 +70,12 @@
 }
 
 .hero__title {
+  @include gradient;
+  font-size: 3.75rem;
+  font-weight: bold;
   span {
     @include gradient;
   }
-  font-size: 3.75rem;
-  font-weight: bold;
 }
 
 .btn-main {
@@ -300,9 +301,9 @@
     font-size: 1.25rem;
   }
 
-  input, textarea {
-    background-color: #2E2A44;
+  input,
+  textarea {
+    background-color: #2e2a44;
     border: none;
   }
 }
-
