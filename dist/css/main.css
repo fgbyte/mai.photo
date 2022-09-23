@@ -21060,14 +21060,14 @@ readers do not read off random characters that represent icons */
   color: #e0e0e0;
 }
 .navbar .navbar-nav .active::before {
-  content: url("/dist/img/svg/arrow-nav.svg");
+  content: url("../img/svg/arrow-nav.svg");
   margin-right: 1rem;
 }
 .navbar .navbar-toggler {
   border: none;
 }
 .navbar .navbar-toggler-icon {
-  background-image: url("../../dist/img/svg/burger.svg");
+  background-image: url("../img/svg/burger.svg");
   height: 2rem;
   width: 2rem;
 }
