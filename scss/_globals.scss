@@ -24,8 +24,9 @@ $carousel-indicator-hit-area-height: 10px;
 $carousel-indicator-spacer: 5px;
 
 //RESETS
-body {
+html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+//   font-size: 1.25rem;
 }
 
 //GLOBAL MIXINS

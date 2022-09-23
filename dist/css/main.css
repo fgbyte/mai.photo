@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body {
+html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -21084,8 +21084,8 @@ readers do not read off random characters that represent icons */
 }
 
 .btn-main, .btn-main--md {
-  width: 9rem;
-  height: 2rem;
+  width: 10rem;
+  height: 2.2rem;
   border-radius: 4px;
   border: none;
   color: #e0e0e0;
@@ -21180,6 +21180,125 @@ readers do not read off random characters that represent icons */
 .services__card .carousel-area .carousel-item__text span {
   color: #ff6b35;
   margin-left: 0.5rem;
+}
+
+.pricings__card {
+  width: 100%;
+  max-width: 38.1875rem;
+  display: flex;
+  flex-direction: column;
+}
+.pricings__card .card__text {
+  max-width: 38.1875rem;
+  position: relative;
+}
+.pricings__card .card__text h2, .pricings__card .card__text .h2 {
+  color: #ff6b35;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.pricings__card .card__text h3, .pricings__card .card__text .h3 {
+  color: #1993ce;
+  font-size: 3.125rem;
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.pricings__card .card__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+}
+.pricings__card .card__image .carousel-indicators {
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+}
+.pricings__card .card__image .carousel-indicators button {
+  border-radius: 100%;
+  width: 0.33rem;
+}
+.pricings__card .card__image .carousel-indicators .active {
+  background-color: #ff6b35;
+  padding: 0.2rem;
+}
+.pricings__card .card__image .carousel-area {
+  height: 100%;
+  max-width: 44rem;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 0.375rem;
+}
+.pricings__card .card__image .carousel-area .carousel-item {
+  width: 100%;
+}
+.pricings__card .card__image .carousel-area .carousel-item__image {
+  min-width: 37.5rem;
+  object-fit: cover;
+  max-height: 37.5rem;
+  border-radius: 8px;
+}
+.pricings__card .card__image .carousel-area__rectangle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricings__card .card__image .carousel-area__rectangle a {
+  color: #e0e0e0;
+  text-decoration-color: #e0e0e0;
+}
+.pricings__card .card__image .carousel-area__rectangle a:hover {
+  color: #1993ce;
+  text-decoration-color: #1993ce;
+}
+
+.contact__card {
+  max-width: 90%;
+  margin: 0 auto;
+  min-height: 5rem;
+  padding: 1rem 1rem 0.4rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.contact__card span {
+  color: #ff6b35;
+}
+.contact__card p {
+  color: #1993ce;
+  font-size: 1.2rem;
+}
+.contact__card--md {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 1rem 1rem 0.4rem 1rem;
+}
+.contact__card--md span {
+  color: #ff6b35;
+}
+.contact__card--md p {
+  color: #1993ce;
+  font-size: 1.2rem;
+}
+
+.contact__form label span {
+  color: #ff6b35;
+}
+.contact__form label {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.contact__form input, .contact__form textarea {
+  background-color: #2E2A44;
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */
