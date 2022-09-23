@@ -21080,12 +21080,6 @@ readers do not read off random characters that represent icons */
   font-size: 3.75rem;
   font-weight: bold;
 }
-.hero__title span {
-  background-image: linear-gradient(to right, #ff6b35, #ffce0f);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .btn-main, .btn-main--md {
   width: 10rem;
