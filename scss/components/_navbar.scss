@@ -1,0 +1,44 @@
+.navbar {
+    border-bottom: 1.5px solid rgba($color: #304662, $alpha: 0.5);
+    background-color: rgba($color: $dark, $alpha: 0.85);
+  
+    .mai-brand {
+      color: $white;
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: bold;
+  
+      &:hover {
+        color: $white;
+      }
+    }
+  
+    .navbar-nav {
+      li {
+        margin-left: 2rem;
+  
+        .nav-link {
+          font-size: 1.25rem;
+          font-weight: bold;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+  
+      .active::before {
+        content: url("/dist/img/svg/arrow-nav.svg");
+        margin-right: 1rem;
+      }
+    }
+  
+    .navbar-toggler {
+      border: none;
+    }
+  
+    .navbar-toggler-icon {
+      background-image: url("../../dist/img/svg/burger.svg");
+      height: 2rem;
+      width: 2rem;
+    }
+  }

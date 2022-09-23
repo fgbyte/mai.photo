@@ -1,0 +1,5 @@
+.hero__title {
+    @include gradient;
+    font-size: 3.75rem;
+    font-weight: bold;
+  }

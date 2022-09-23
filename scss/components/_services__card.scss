@@ -1,0 +1,71 @@
+.services__card {
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+
+  .carousel-indicators {
+    @include carousel-indicators();
+  }
+
+  .carousel-area {
+    height: 43.75rem;
+    max-width: 30.42rem;
+    margin: 0 auto;
+    // margin-top: 4rem;
+    // margin-bottom: 2rem;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 8px;
+
+    .carousel-item {
+      width: 100%;
+
+      &__image {
+        width: 100%;
+        height: 43.75rem;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      &__text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+
+        a {
+          color: $white;
+          text-decoration-color: $white;
+          h3 {
+            font-size: 1.2rem;
+          }
+
+          &:hover {
+            color: $secondary;
+            text-decoration-color: $secondary;
+          }
+        }
+
+        span {
+          color: $primary;
+          margin-left: 0.1rem;
+        }
+      }
+    }
+
+    &__rectangle {
+      position: absolute;
+      max-width: 30.42rem;
+      bottom: 0;
+      width: 100%;
+      height: 5rem;
+      background-color: rgba($color: black, $alpha: 0.5);
+      padding: 0 1rem;
+      z-index: 1;
+    }
+  }
+}

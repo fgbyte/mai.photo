@@ -1,0 +1,14 @@
+.about__social-icons {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+  
+    span {
+      color: $white;
+      font-size: 3rem;
+  
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }

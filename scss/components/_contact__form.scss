@@ -1,0 +1,17 @@
+.contact__form {
+    label span {
+      color: $primary;
+    }
+  
+    label {
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+  
+    input,
+    textarea {
+      background-color: #2e2a44;
+      border: none;
+    }
+  }
+  
