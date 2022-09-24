@@ -1,5 +1,11 @@
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .hero {
-  height: calc(100vh - 8rem);
+  height: 100%;
+  //   height: calc(100vh - 8rem);
 
   &__card {
     margin-top: 6rem;
@@ -40,8 +46,59 @@
   }
 
   &__down-scroll {
-    position: absolute;
-    bottom: 5%;
+    // position: absolute;
+    // bottom: 5%;
     right: calc(50% - 8.35px);
   }
+}
+
+.services {
+  height: 100%;
+  @include media-breakpoint-down(lg) {
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about {
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+  }
+  &__avatar {
+    width: 100%;
+    max-width: 8rem;
+  }
+  &__body {
+    // @include media-breakpoint-down(md) {
+    //   padding: 0 .5rem;
+    // }
+    span {
+        color: $primary;
+    }
+  }
+  &__footer {
+      display: flex;
+      justify-content: center;
+  }
+}
+
+.pricings {
+    height: 100%;
+}
+
+.contact {
+    height: 100%;
+}
+
+.footer {
+    text-align: center;
+    a {
+        text-decoration: none;
+    }
 }

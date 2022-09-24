@@ -21036,8 +21036,13 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .hero {
-  height: calc(100vh - 8rem);
+  height: 100%;
 }
 .hero__card {
   margin-top: 6rem;
@@ -21072,9 +21077,52 @@ readers do not read off random characters that represent icons */
   font-weight: 300;
 }
 .hero__down-scroll {
-  position: absolute;
-  bottom: 5%;
   right: calc(50% - 8.35px);
+}
+
+.services {
+  height: 100%;
+}
+@media (max-width: 991.98px) {
+  .services {
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about__top {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+.about__avatar {
+  width: 100%;
+  max-width: 8rem;
+}
+.about__body span {
+  color: #ff6b35;
+}
+.about__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.pricings {
+  height: 100%;
+}
+
+.contact {
+  height: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -21147,20 +21195,19 @@ readers do not read off random characters that represent icons */
 }
 
 .about__social-icons {
-  width: 15rem;
+  width: 13rem;
   display: flex;
   justify-content: space-between;
 }
 .about__social-icons span {
   color: #e0e0e0;
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 .about__social-icons span:hover {
   color: #1993ce;
 }
 
 .services__card {
-  text-align: center;
   position: relative;
   border-radius: 8px;
 }
@@ -21178,9 +21225,8 @@ readers do not read off random characters that represent icons */
   padding: 0.2rem;
 }
 .services__card .carousel-area {
-  height: 43.75rem;
+  height: 40rem;
   max-width: 30.42rem;
-  margin: 0 auto;
   overflow: hidden;
   text-align: center;
   border-radius: 8px;
@@ -21190,7 +21236,7 @@ readers do not read off random characters that represent icons */
 }
 .services__card .carousel-area .carousel-item__image {
   width: 100%;
-  height: 43.75rem;
+  height: 40rem;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -21321,8 +21367,7 @@ readers do not read off random characters that represent icons */
 }
 
 .contact__card {
-  max-width: 90%;
-  margin: 0 auto;
+  margin-bottom: 1rem;
   min-height: 5rem;
   padding: 1rem 1rem 0.4rem 1rem;
   background-color: rgba(255, 255, 255, 0.1);
@@ -21338,24 +21383,24 @@ readers do not read off random characters that represent icons */
   color: #1993ce;
   font-size: 1.2rem;
 }
-.contact__card--md {
+.contact__card--lg {
   width: 100%;
   margin: 0 auto;
   height: 100%;
   padding: 1rem 1rem 0.4rem 1rem;
 }
-.contact__card--md span {
+.contact__card--lg span {
   color: #ff6b35;
 }
-.contact__card--md a {
+.contact__card--lg a {
   text-decoration: none;
   color: #e0e0e0;
 }
-.contact__card--md p {
+.contact__card--lg p {
   color: #1993ce;
   font-size: 1.2rem;
 }
-.contact__card--md:hover {
+.contact__card--lg:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
