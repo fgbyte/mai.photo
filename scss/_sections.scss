@@ -1,14 +1,37 @@
 .hero {
-  margin-top: 6rem;
   height: calc(100vh - 8rem);
-  @include media-breakpoint-up(md) {
-    margin-top: 4.5rem;
+
+  &__card {
+    margin-top: 6rem;
+    @include media-breakpoint-up(md) {
+      margin-top: 4.5rem;
+    }
+
+    .hero__avatar {
+      img {
+        // margin-top: 2rem;
+        width: 100%;
+        max-width: 15rem;
+      }
+      p {
+        font-size: 1.6rem;
+        font-weight: 300;
+      }
+    }
   }
-  &__avatar {
+
+  &__card--lg {
+    margin-top: 35vh;
+    padding: 0 2rem 0 0;
+  }
+
+  &__avatar--lg {
+    text-align: center;
+    margin-top: 20vh;
     img {
       // margin-top: 2rem;
       width: 100%;
-      max-width: 15rem;
+      max-width: 21.5rem;
     }
     p {
       font-size: 1.6rem;

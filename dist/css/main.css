@@ -21037,19 +21037,37 @@ readers do not read off random characters that represent icons */
 }
 
 .hero {
-  margin-top: 6rem;
   height: calc(100vh - 8rem);
 }
+.hero__card {
+  margin-top: 6rem;
+}
 @media (min-width: 768px) {
-  .hero {
+  .hero__card {
     margin-top: 4.5rem;
   }
 }
-.hero__avatar img {
+.hero__card .hero__avatar img {
   width: 100%;
   max-width: 15rem;
 }
-.hero__avatar p {
+.hero__card .hero__avatar p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.hero__card--lg {
+  margin-top: 35vh;
+  padding: 0 2rem 0 0;
+}
+.hero__avatar--lg {
+  text-align: center;
+  margin-top: 20vh;
+}
+.hero__avatar--lg img {
+  width: 100%;
+  max-width: 21.5rem;
+}
+.hero__avatar--lg p {
   font-size: 1.6rem;
   font-weight: 300;
 }
