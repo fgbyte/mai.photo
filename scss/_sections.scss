@@ -1,0 +1,24 @@
+.hero {
+  margin-top: 6rem;
+  height: calc(100vh - 8rem);
+  @include media-breakpoint-up(md) {
+    margin-top: 4.5rem;
+  }
+  &__avatar {
+    img {
+      // margin-top: 2rem;
+      width: 100%;
+      max-width: 15rem;
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+  }
+
+  &__down-scroll {
+    position: absolute;
+    bottom: 5%;
+    right: calc(50% - 8.35px);
+  }
+}

@@ -2,4 +2,9 @@
     @include gradient;
     font-size: 3.75rem;
     font-weight: bold;
+
+    @include media-breakpoint-down(md){
+      font-size: 2.5rem;
+
+      }
   }
