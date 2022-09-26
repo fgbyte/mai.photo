@@ -21177,7 +21177,7 @@ readers do not read off random characters that represent icons */
 
 .btn-main, .btn-main--md {
   min-width: 8.5rem;
-  height: 1.8rem;
+  height: 2rem;
   border-radius: 4px;
   border: none;
   color: white;
