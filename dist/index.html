@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-offset="0">
     <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
         <div class="container">
@@ -25,23 +25,23 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link none" href="#">About</a>
+                        <a class="nav-link d-lg-none" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricings</a>
+                        <a class="nav-link" href="#pricings">Pricings</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact me</a>
+                        <a class="nav-link" href="#contact">Contact me</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- HERO -->
-    <section class="hero container mb-5">
+    <section id="hero" class="hero container mb-5">
         <div class="row">
             <!-- SM/MD -->
             <div class="col d-lg-none text-center">
@@ -52,10 +52,10 @@
                         <img src="./img/avatar.png" alt="avatar">
                         <p class="hero__description">Mai Photography</p>
                     </div>
-                    <button class="btn-main mt-2">Book a session📸</button>
+                    <button class="btn-main mt-2"><a href="#contact">Book a session📸</a></button>
                 </div>
-                <div class="hero__down-scroll text-center py-5"><a href="#"><img src="./img/svg/down-scroll.svg"
-                            alt=""></a>
+                <div class="hero__down-scroll text-center py-5"><a href="#services"><img src="./img/svg/down-scroll.svg"
+                            alt="down-scroll"></a>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@
                     <h3><span class="hero__title">Welcome to<br> my Site</span> <span><img src="./img/heart.png"
                                 alt="heart"></span></h3>
                     <p>Besides, a huge improvement of the criterion represents a bond between the significant </p>
-                    <button class="btn-main--md">Book a session📸</button>
+                    <button class="btn-main--md"><a href="#contact">Book a session📸</a></button>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -75,14 +75,14 @@
                 </div>
             </div>
             <div class="hero__down-scroll--lg py-lg-5 text-center d-none d-lg-block">
-                <a href="#"><img src="./img/svg/down-scroll.svg" alt=""></a>
+                <a href="#services"><img src="./img/svg/down-scroll.svg" alt=""></a>
             </div>
         </div>
     </section>
     <!-- SERVICES -->
     <section class="services container mt-5 mb-5">
         <div class="row">
-            <div class="col-12 col-lg-6 mt-5">
+            <div id="services" class="col-12 col-lg-6 mt-5">
                 <h2 class="section-title">
                     Services
                 </h2>
@@ -145,7 +145,7 @@
                 </div>
             </div>
             <!-- ABOUT -->
-            <div class="col-12 col-lg-6">
+            <div id="about" class="col-12 col-lg-6">
                 <div class="about mt-5">
                     <div class="about__top">
                         <h2 class="section-title">
@@ -178,7 +178,7 @@
         </div>
     </section>
     <!-- PRICINGS -->
-    <section class="pricings container mt-5 mb-5">
+    <section id="pricings" class="pricings container mt-5 mb-5">
         <div class="row">
             <h2 class="section-title">Pricings</h2>
             <div class="col-12 col-md-6">
@@ -220,7 +220,7 @@
                                     <a href="#">
                                         <h4>#model_photography</h4>
                                     </a>
-                                    <button class="btn-main">Book a Session 📸</button>
+                                    <button class="btn-main"><a href="#contact">Book a Session 📸</a></button>
                                 </div>
                             </div>
                         </div>
@@ -266,7 +266,7 @@
                                     <a href="#">
                                         <h4>#model_photography</h4>
                                     </a>
-                                    <button class="btn-main">Book a Session 📸</button>
+                                    <button class="btn-main"><a href="#contact">Book a Session 📸</a></button>
                                 </div>
                             </div>
                         </div>
@@ -312,7 +312,7 @@
                                     <a href="#">
                                         <h4>#model_photography</h4>
                                     </a>
-                                    <button class="btn-main">Book a Session 📸</button>
+                                    <button class="btn-main"><a href="#contact">Book a Session 📸</a></button>
                                 </div>
                             </div>
                         </div>
@@ -358,7 +358,7 @@
                                     <a href="#">
                                         <h4>#model_photography</h4>
                                     </a>
-                                    <button class="btn-main">Book a Session 📸</button>
+                                    <button class="btn-main"><a href="#contact">Book a Session 📸</a></button>
                                 </div>
                             </div>
                         </div>
@@ -368,7 +368,7 @@
         </div>
     </section>
     <!-- CONTACT -->
-    <section class="contact container">
+    <section id="contact" class="contact container">
         <div class="row">
             <h2 class="section-title">Contact</h2>
             <div class="col-12 col-lg-6">

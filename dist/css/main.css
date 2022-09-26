@@ -21180,10 +21180,18 @@ readers do not read off random characters that represent icons */
   height: 2rem;
   border-radius: 4px;
   border: none;
+  background-color: #ff6b35;
   color: white;
   font-weight: 700;
+}
+.btn-main a, .btn-main--md a {
+  color: white !important;
+  font-weight: 700;
   font-size: 0.9rem;
-  background-color: #ff6b35;
+  text-decoration: none;
+}
+.btn-main a:hover, .btn-main--md a:hover {
+  color: white !important;
 }
 .btn-main:hover, .btn-main--md:hover {
   background-color: #1993ce;
@@ -21192,6 +21200,12 @@ readers do not read off random characters that represent icons */
   width: 13rem;
   height: 2.8rem;
   font-size: 1.2rem;
+}
+.btn-main--md a {
+  font-size: 1.2rem;
+}
+.btn-main--md a:hover {
+  color: white;
 }
 
 .about__social-icons {
